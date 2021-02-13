@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+	<title>Login</title>
+	<style>
+		.animate__animated.animate__flipInX {
+		  --animate-duration: 1.5s;
+		}
+
+		body {
+			font-family: 'Roboto', sans-serif;
+			background-image: url(img/bck5.jpg); 
+			background-size: cover;
+			animation-name: animasi_login;
+			 animation-duration: 15s;
+			 animation-iteration-count: infinite;
+			 animation-direction: alternate;
+			 animation-timing-function: ease-in;
+		}
+
+		@keyframes animasi_login {
+			0%{ background-image: url(img/bck5.jpg);}
+			
+			40%{ background-image: url(img/bck2.jpg);}
+
+			100%{ background-image: url(img/bck6.jpg);}
+		}
+	</style>
+</head>
+<body style="min-height: 500px;">		
+
+	<!-- form -->
+	<form style="width: 300px; margin: 120px auto; padding: 30px 20px 1px 20px; background-color: black; opacity: 1; border-radius: 10px;  box-shadow: 0px 0px 10px white;" class="animate__animated animate__flipInX">
+		<img src="img/logo.png" class="img-thumbnail rounded-circle" width="90" style="margin-left: 32%; margin-bottom: 14px;">
+		<br>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1">@</span>
+			<input type="text" name="username" id="username" class="form-control" placeholder="Username" aria-label="username" aria-describedby="basic-addon1" autocomplete="off" required>
+		</div>
+		<div class="input-group mb-3">
+			<span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+				<path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+			</svg></span>
+			<input type="password" name="password" id="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="basic-addon1" required>
+		</div>
+		<?php if (isset ($error) ) : ?>
+			<p style=" color: white; font-style: italic;" class="animate__animated animate__shakeY"> username / password salah</p>
+		<?php endif; ?>
+		<div>
+			<input type="checkbox" name="remember" id="remember">
+			<label for="remember" style="color: white; margin-bottom: 10px;">Ingat saya</label>
+		</div>
+		<button type="submit" name="login" class="btn btn-danger" style="width: 260px;"> Sign In</button>
+		<br>
+		<a href="#" class="text-center">Buat akun</a>
+		<br>	
+		<br>
+		<div style="font-size: 10px; text-align: center; color: white;">
+		</div>
+	</form>
+
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+-->
+</body>
+</html>

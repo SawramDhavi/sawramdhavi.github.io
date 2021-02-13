@@ -1,0 +1,134 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400px;
+}
+
+.nav-item {
+  font-size: 20px;
+  font-weight: 900;
+  padding: 8px;
+}
+
+/* ------------ background ---------- */
+.background {
+  background-size: cover;
+  height: 600px;
+  padding-top: 150px;
+  animation-name: animasi_login;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes animasi_login {
+  0% {
+    background-image: url(img/bck1.jpg);
+  }
+
+  50% {
+    background-image: url(img/bck2.jpg);
+  }
+
+  100% {
+    background-image: url(img/bck5.jpg);
+  }
+}
+
+.background h1 {
+  color: white;
+  font-size: 120px;
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+
+.background p {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* --------------- Opening Time ---------------- */
+.opening {
+  background-image: url(img/bck4.jpg);
+  background-size: cover;
+  min-height: 500px;
+}
+
+.opening h3 {
+  font-family: "Lobster", cursive;
+  padding-top: 80px;
+}
+
+/* ------------------ sejarah ------------------ */
+.Sejarah {
+  background-image: url(img/sejarah.jpg);
+  background-size: cover;
+  min-height: 700px;
+  color: white;
+}
+.Sejarah h1 {
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  padding-top: 50px;
+}
+
+.Sejarah p {
+  font-size: 18px;
+}
+
+/* ---------------- ruangan ---------------- */
+.ruangan {
+  background-image: url(img/latar.jpg);
+  background-size: cover;
+  min-height: 600px;
+}
+
+.ruangan h2 {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  padding: 10px;
+  color: #f5f3f2;
+}
+
+/* --------------- footer -------------- */
+footer {
+  background: linear-gradient(to right, #1f1e1e, #3a3a3b);
+  padding-top: 25px;
+  font-size: 15px;
+  color: #f5f3f2;
+}
+
+/* --------------- menu review --------------- */
+.menu,
+.review {
+  background-image: url(img/texture2.jpg);
+}
+.menu h2,
+.review h2 {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+.review {
+  margin-bottom: -50px;
+  padding-bottom: 25px;
+}
+
+/* ------------- card ------------- */
+.card {
+  box-shadow: 1px 1px 8px #4d4d4d;
+  margin: 50px 15px;
+}
+
+/* --------------- contact ---------------- */
+.contact {
+  padding: 30px 0px;
+}
+.contact h2 {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  padding: 30px 0px;
+}
