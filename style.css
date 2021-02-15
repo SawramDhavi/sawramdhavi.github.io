@@ -78,20 +78,6 @@ body {
   font-size: 18px;
 }
 
-/* ---------------- ruangan ---------------- */
-.ruangan {
-  background-image: url(img/latar.jpg);
-  background-size: cover;
-  min-height: 600px;
-}
-
-.ruangan h2 {
-  font-family: "Lobster", cursive;
-  font-size: 50px;
-  padding: 10px;
-  color: #f5f3f2;
-}
-
 /* --------------- footer -------------- */
 footer {
   background: linear-gradient(to right, #1f1e1e, #3a3a3b);
