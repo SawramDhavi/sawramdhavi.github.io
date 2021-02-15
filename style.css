@@ -90,6 +90,7 @@ footer {
 .menu,
 .review {
   background-image: url(img/texture2.jpg);
+  padding-left: 115px;
 }
 .menu h2,
 .review h2 {
@@ -112,7 +113,15 @@ footer {
 /* --------------- contact ---------------- */
 .contact {
   padding: 30px 0px;
+  background-image: url(img/latar.jpg);
+  color: white;
 }
+
+.contact form input,
+textarea {
+  opacity: 0.5;
+}
+
 .contact h2 {
   font-family: "Lobster", cursive;
   font-size: 50px;
