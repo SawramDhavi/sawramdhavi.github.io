@@ -90,8 +90,12 @@ footer {
 .menu,
 .review {
   background-image: url(img/texture2.jpg);
+}
+
+.review {
   padding-left: 115px;
 }
+
 .menu h2,
 .review h2 {
   font-family: "Lobster", cursive;
